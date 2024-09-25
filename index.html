@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
-    <title>My HTML Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
 </head>
 <body>
     <!-- Заголовок страницы -->
-    <header>
-        <h1>Welcome to My HTML Page</h1>
+    <header class="header">
+        <h1 class="header__title">My Website</h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
     </header>
 
     <!-- Основной контент -->
-    <main>
+    <main class="content">
         <!-- Раздел о себе -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Iana and this is my first HTML page.</p>
-            <p>Here is a list of my hobbies:</p>
-            <ul>
-                <li>Traveling</li>
-                <li>Listening to music</li>
-                <li>Learning something new</li>
-            </ul>
-        </section>
-
-        <!-- Раздел с изображением -->
-        <section id="gallery">
-            <h2>My Favorite Places</h2>
-            <img src="img/1.jpg" alt="Montenegro">
-            <p>This is a photo of a place I love.</p>
+        <section class="content__about">
+            <h3 class="about__title">About Me</h3>
+            <p class="about__text">Hello! My name is Iana.</p>
+            <p class="about__text">I am a beginner in web development and this is my first website.</p>
+            <p class="about__text">And I love travelling!!!</p>
+            <div class="context__photo">
+                <img src="img/1.jpg" alt="photo" width="30%">
+            </div>
         </section>
 
         <!-- Раздел с контактной информацией -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at <a href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a>.</p>
+        <section class="content__contact">
+            <div class="contact__container">
+                <h3 class="contact__title">Contact Information</h3>
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <span class="contact__label">Email:</span>
+                    <a class="contact__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a>
+                  </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <!-- Подвал -->
-    <footer>
-        <p>&copy; 2024 Iana S.</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Iana S.</p>
     </footer>
 </body>
 </html>
