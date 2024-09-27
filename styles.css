@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #085e0f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav__link {
+    color: #200bab;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav__link::after {
+    content: ' ←';
+    color: #000;
+}
+
+.nav__link:hover {
+    color: #ff0000;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

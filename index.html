@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Заголовок страницы -->
@@ -30,11 +31,17 @@
         <!-- Раздел о себе -->
         <section class="content__about">
             <h3 class="about__title">About Me</h3>
-            <p class="about__text">Hello! My name is Iana.</p>
+            <p class="about__text">Hello! My name is <strong>Iana</strong>.</p>
             <p class="about__text">I am a beginner in web development and this is my first website.</p>
             <p class="about__text">And I love travelling!!!</p>
-            <div class="context__photo">
-                <img src="img/1.jpg" alt="photo" width="30%">
+        </section>
+
+        <!-- Галерея -->
+        <section class="content__gallery"> 
+            <div class="context__photo"></div>
+                <img src="img/kotor.jpg" alt="Kotor, Montenegro" width="30%">
+                <img src="img/dubai.jpg" alt="Dubai, UAE" width="30%">
+                <img src="img/istanbul.jpg" alt="Istanbul, Turkey" width="30%">
             </div>
         </section>
 
@@ -46,6 +53,10 @@
                   <li class="contact__item">
                     <span class="contact__label">Email:</span>
                     <a class="contact__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a>
+                  </li>
+                  <li class="contact__item">
+                    <span class="contact__label">WhatsApp:</span>
+                    <a class="contact__link"href="https://wa.me/+79045980001">+79045980001</a>
                   </li>
                 </ul>
             </div>
