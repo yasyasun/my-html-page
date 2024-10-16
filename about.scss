@@ -35,8 +35,9 @@ $transition-time: 0.3s;
 
 // Шапка страницы
 .header {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   padding: $padding;
+  color: white;
 
   &__title {
     margin: 0;
@@ -53,7 +54,7 @@ $transition-time: 0.3s;
 
   &__link {
     text-decoration: none;
-    color: $text-color;
+    color: white;
 
     &:hover {
       color: blue;
@@ -132,10 +133,11 @@ $transition-time: 0.3s;
 
   &__link {
     color: $highlight-color;
+    text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
-      @include transition(text-decoration); // Переход для подчеркивания
+        color: #0d0f72;
+        @include transition(text-decoration); // Переход для подчеркивания
     }
   }
 }
