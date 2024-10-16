@@ -6,20 +6,20 @@
     <title>My website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page">
     <!-- Заголовок страницы -->
     <header class="header">
         <h1 class="header__title">My Website</h1>
         <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Home</a> 
+            <ul class="nav__menu">
+                <li class="nav__menu-item">
+                    <a href="index.html" class="header__link">Home</a> 
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">About</a>
+                <li class="nav__menu-item">
+                    <a href="about.html" class="header__link">About</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
+                <li class="nav__menu-item">
+                    <a href="#contacts" class="header__link">Contacts</a>
                 </li>
 
             </ul>
@@ -29,42 +29,44 @@
     <!-- Основной контент -->
     <main class="content">
         <!-- Раздел о себе -->
-        <section class="content__about">
-            <h3 class="about__title">About Me</h3>
-            <p class="about__text">Hello! My name is <strong>Iana</strong>.</p>
-            <p class="about__text">I am a beginner in web development and this is my first website.</p>
-            <p class="about__text">And I love travelling!!!</p>
+        <section class="content__section content__section--about">
+            <h3 class="content__title">About Me</h3>
+            <p class="content__text">Hello! My name is <strong>Iana</strong>.</p>
+            <p class="content__text">I am a beginner in web development and this is my first website.</p>
+            <p class="content__text">And I love travelling!!!</p>
         </section>
 
-        <!-- Галерея -->
-        <section class="content__gallery"> 
-            <div class="context__photo"></div>
+        <!-- Раздел галерея -->
+        <section class="content__section content__section--gallery"> 
+            <div class="content__photo"></div>
                 <img src="img/kotor.jpg" alt="Kotor, Montenegro" width="30%">
                 <img src="img/dubai.jpg" alt="Dubai, UAE" width="30%">
                 <img src="img/istanbul.jpg" alt="Istanbul, Turkey" width="30%">
             </div>
         </section>
 
-        <!-- Раздел с контактной информацией -->
-        <section class="content__contact">
-            <div class="contact__container">
-                <h3 class="contact__title">Contact Information</h3>
-                <ul class="contact__list">
-                  <li class="contact__item">
-                    <span class="contact__label">Email:</span>
-                    <a class="contact__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a>
-                  </li>
-                  <li class="contact__item">
-                    <span class="contact__label">WhatsApp:</span>
-                    <a class="contact__link"href="https://wa.me/+79045980001">+79045980001</a>
-                  </li>
-                </ul>
-            </div>
+        <!-- Раздел проектов -->
+        <section class="content__section content__section--projects">
+            <h3 class="content__title">Projects</h3>
+            <ul class="content__list">
+                <li class="content__list-item">1 - Website for business &#10003;</li>
+                <li class="content__list-item">2 - Online store &#128722;</li>
+                <li class="content__list-item">3 - Photograpther's portfolio &#128248;</li>
+            </ul>
         </section>
     </main>
 
-    <!-- Подвал -->
+    <!-- Футер -->
     <footer class="footer">
+        <section class="footer__section footer__section--contacts">
+            <h3 class="footer__title">Contacts</h3>
+            <address class="footer__contact">
+              Email:
+              <a class="footer__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a
+              ><br />
+              WhatsApp:
+              <a class="footer__link" href="https://wa.me/+79045980001">+79045980001</a>
+            </address>
         <p class="footer__text">&copy; 2024 Iana S.</p>
     </footer>
 </body>

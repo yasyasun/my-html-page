@@ -1,0 +1,103 @@
+.page-about {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+.header__title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+.header__link:hover {
+  color: blue;
+  transition: color 0.3s ease-in-out;
+}
+
+.about {
+  padding: 20px;
+}
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about__text {
+  margin-bottom: 20px;
+}
+.about__skills-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.about__skills-list {
+  list-style: none;
+  padding: 0;
+}
+.about__skills-list-item {
+  padding: 5px 0;
+}
+.about__image-figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.about__image-figure-image {
+  max-width: 100%;
+  height: auto;
+}
+.about__image-figure-caption {
+  font-size: 0.9rem;
+  color: gray;
+}
+.about__quote {
+  font-style: italic;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #333;
+}
+@media (max-width: 600px) {
+  .about__quote {
+    font-size: 1.2rem;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title {
+  margin-bottom: 10px;
+}
+.footer__link {
+  color: #f9f871;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  transition: -webkit-text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+}/*# sourceMappingURL=about.css.map */
