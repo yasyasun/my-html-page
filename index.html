@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="page">
     <!-- Заголовок страницы -->
     <header class="header">
         <h1 class="header__title">My Website</h1>
+        <script>
+            console.log('Скрипт 1 был успешно подключен к странице');
+            alert('Добро пожаловать в JavaScript!');
+        </script>
         <nav class="header__nav">
-            <ul class="nav__menu">
-                <li class="nav__menu-item">
+            <ul class="header__menu">
+                <li class="header__menu-item">
                     <a href="index.html" class="header__link">Home</a> 
                 </li>
-                <li class="nav__menu-item">
+                <li class="header__menu-item">
                     <a href="about.html" class="header__link">About</a>
                 </li>
-                <li class="nav__menu-item">
+                <li class="header__menu-item">
                     <a href="#contacts" class="header__link">Contacts</a>
                 </li>
 
